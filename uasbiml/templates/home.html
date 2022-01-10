@@ -1,20 +1,83 @@
 <!doctype html>
 <html>
+    <head>
+    <title>Prediksi Iphone</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
    <body>
+    <div class="container">
     <div class="div2">
+      <h2>PREDIKSI PRODUK IPHONE TERJUAL</h2>
       <form action = "/prediksi/" method = "POST">
-         <p> Masukin harga iphone <input type = "text" name = "Biayaiklan" /> <input type = "submit" value = "ok" /> </p>
+         <p> Masukin harga iphone <input type = "text" name = "Biayaiklan" /> <input type = "submit" value = "SUMBIT" /> </p>
       </form>
     
-   <p>Prediksi banyak produk yang terjual adalah: {{ result }}</p>
+   <p>Prediksi banyak produk yang terjual adalah: <br> {{ result }}</p>
    </div>
+ </div>
    </body>
 <style>
     .div2 {
      width: 400px;
-     height: 100px;  
+     height: 300px;  
      padding: 50px;
      border: 1px solid black;
    }
+
+   {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url(https://photos.app.goo.gl/BRoGaYnZh52KhuhQ7);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 25px;
+    width: 500px;
+
+    background-color: rgba(0,0,0,.2);
+    box-shadow: 0 0 10px rgba(255,255,255,.3);
+}
+.container h1{
+    text-align: left;
+    color: #fafafa;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #2979ff;
+}
+.container label{
+    text-align: left;
+    color: #90caf9;
+}
+.container form input{
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #2979ff;
+    color: #fff;
+    font-size: 20px;
+}
+.container form button{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    background-color:#2979ff;
+    font-size: 18px;
+    color: #fafafa;
+}
    </style>
 </html>
